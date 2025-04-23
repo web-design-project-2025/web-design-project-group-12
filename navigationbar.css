@@ -1,0 +1,97 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #a70000;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+ul,
+li a,
+#openCategoryMenu {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9pt;
+}
+
+li a:hover,
+#openCategoryMenu:hover {
+  color: black;
+}
+
+li a {
+  transition: all 0.3s ease;
+}
+
+nav img {
+  width: 1.3rem;
+  height: auto;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* .categoryMenu {
+  height: 100%;
+  width: 20rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #a70000;
+  overflow-x: hidden;
+  padding-top: 2rem;
+  transition: 0.5s;
+}
+
+.categoryMenu a {
+  text-decoration: none;
+  font-size: 9pt;
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.categoryMenu {
+  display: none;
+}
+
+.categoryMenu {
+  left: 0;
+}
+
+.categoryMenu a {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.categoryMenu a:hover {
+  font-weight: bold;
+}
+
+.categoryMenu #closeCategoryMenu {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 20pt;
+}
+
+#openCategoryMenu {
+  background-color: #a70000;
+  border: none;
+} */
