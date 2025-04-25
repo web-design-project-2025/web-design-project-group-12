@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New review</title>
+    <link rel="stylesheet" href="review.css" />
+    <script src="review.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="reviewpage">
+      <h2>Write a review</h2>
+      <input
+        type="text"
+        id="title"
+        name="movietitle"
+        placeholder="Movie title..."
+      />
+      <h3>How many stars would you like to give this movie?</h3>
+      <div class="stars">
+        <i class="fa-solid fa-star" data-index="1"></i>
+        <i class="fa-solid fa-star" data-index="2"></i>
+        <i class="fa-solid fa-star" data-index="3"></i>
+        <i class="fa-solid fa-star" data-index="4"></i>
+        <i class="fa-solid fa-star" data-index="5"></i>
+      </div>
+      <textarea
+        class="inputtext"
+        id="review-text"
+        name="reviewtext"
+        placeholder="Write your review here..."
+      ></textarea>
+      <a href="account.html" id="postbutton">
+        Post <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </body>
+</html>

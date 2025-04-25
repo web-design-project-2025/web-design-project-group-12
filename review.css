@@ -1,0 +1,80 @@
+* {
+  background-color: black;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.reviewpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: white;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+/*The stars*/
+.checked {
+  color: #ffb731;
+}
+
+.stars i,
+.post-button {
+  transition: color 0.3s ease;
+}
+
+.stars {
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.hovered {
+  color: #ffe58a;
+}
+
+/*The text boxes*/
+input[type="text"],
+.inputtext {
+  background-color: #d9d9d9;
+  width: 50%;
+  padding: 1rem 1rem;
+  border: 1px solid #959595;
+  border-radius: 0.5rem;
+}
+
+.inputtext {
+  width: 55%;
+  height: 7rem;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#postbutton {
+  background-color: #a70000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+#postbutton:hover {
+  background-color: #d70808;
+}
