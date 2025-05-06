@@ -24,24 +24,36 @@ h3 {
   color: white;
 }
 
-/*The stars*/
-.checked {
-  color: #ffb731;
-}
-
-.stars i,
-.post-button {
-  transition: color 0.3s ease;
-}
+/*Stars*/
 
 .stars {
   padding-bottom: 2rem;
   color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-.hovered {
+.stars i {
+  margin: 0.3rem;
+}
+
+.stars i:hover {
   color: #ffe58a;
 }
+
+.stars i:hover ~ i {
+  color: #ffe58a;
+}
+
+.stars .clicked {
+  color: #ffb731;
+}
+
+/* .stars i.clicked ~ i {
+  color: #ffb731;
+} */
 
 /*The text boxes*/
 input[type="text"],
@@ -61,7 +73,7 @@ input[type="text"],
   box-sizing: border-box;
 }
 
-#postbutton {
+#button {
   background-color: #a70000;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -75,6 +87,47 @@ input[type="text"],
   margin-top: 2rem;
 }
 
-#postbutton:hover {
+#button:hover {
   background-color: #d70808;
 }
+
+.fa-solid fa-arrow-right {
+  background-color: #a70000;
+}
+
+/* .stars i,
+.post-button {
+  transition: color 0.3s ease;
+} */
+
+/* .stars {
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.stars i:hover {
+  color: #ffe58a;
+  cursor: pointer;
+} */
+
+/* .stars i {
+  transition: color 0.3s ease;
+}
+
+.stars i.selected {
+  color: #ffb731;
+} */
+
+/* .stars i:hover {
+  color: #ffe58a;
+  transition: color 0.3s ease;
+}
+
+.stars i:hover {
+  color: #ffe58a;
+  transition: color 0.3s ease;
+}
+
+.stars i:hover ~ i {
+  color: blue;
+}  */
