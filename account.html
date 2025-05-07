@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
-    <link rel="stylesheet" href="account.css" />
+    <link rel="stylesheet" href="review.css" />
+    <script src="account.js" defer></script>
     <script
       src="https://kit.fontawesome.com/87dc3e8f6e.js"
       crossorigin="anonymous"
@@ -17,28 +18,24 @@
     />
   </head>
   <body>
-    <h1>Your Reviews</h1>
+    <h2>Account</h2>
+    <div class="profile" id="profile">
+      <img
+        src="images/lillyprofile.jpg"
+        alt="Lilly Johansson profilepicture"
+        class="profile-img"
+      />
+      <div class="profile-info">
+        <h3 id="profilename">Lilly Johansson</h3>
+        <p id="profile-genre">FAVORITE GENRE: Romance and fantasy</p>
+      </div>
+      <button id="edit-profile" class="edit-profile">
+        <i class="fa-solid fa-user-pen"></i>
+      </button>
+    </div>
 
+    <h3>Your Reviews</h3>
+    <a href="review.html" id="button"> Add a new review </a>
     <div id="review-display"></div>
-    <script>
-      const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-      const display = document.getElementById("review-display");
-
-      if (reviews.length === 0) {
-        display.innerHTML = "<p>No reviews yet.</p>";
-      } else {
-        display.innerHTML = reviews
-          .map(
-            (r) => `
-              <div>
-                <h3>${r.title}</h3>
-                <p>${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</p>
-                <p>${r.text}</p>
-              </div>
-            `
-          )
-          .join("");
-      }
-    </script>
   </body>
 </html>
