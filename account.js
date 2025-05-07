@@ -60,3 +60,19 @@ if (reviews.length === 0) {
     })
     .join("");
 }
+
+/*Snackbar - message for a posted review*/
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("reviewAdded") === "true") {
+    showSnackbar();
+    localStorage.removeItem("reviewAdded");
+  }
+});
+
+function showSnackbar() {
+  const snackbar = document.getElementById("snackbar");
+  snackbar.className = "show";
+  setTimeout(() => {
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 3000);
+}
