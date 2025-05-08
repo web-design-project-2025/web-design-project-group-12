@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const movieId = Number(urlParams.get("id"));
 
-fetch('data/movies.json')
+fetch('movies.json')
   .then(response => response.json())
   .then(data => {
-    const movie = movie.find(movie => movie.id === movieId);
+    console.log('Movies loaded:', data);
+
+    const movie = data.find(movie => movie.id === movieId);
     if(movie){
       document.getElementById("movie-title").textContent = movie.title;
       document.getElementById("movie-description").textContent = movie.description;
@@ -18,5 +20,6 @@ fetch('data/movies.json')
     } else {
       document.getElementById("movie-container").innerHTML = "<p>Movie not found!</p>"
     }
-  });
+  })
+  .catch(error => console.error('Failed to load JSON:', error));
 });
