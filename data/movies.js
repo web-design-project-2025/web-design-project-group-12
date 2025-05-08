@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const movieId = Number(urlParams.get("id"));
 
-fetch('movies.json')
+fetch('data/movies.json')
   .then(response => response.json())
   .then(data => {
     const movie = movie.find(movie => movie.id === movieId);
