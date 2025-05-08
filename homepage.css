@@ -24,7 +24,7 @@
   overflow: auto;
   gap: 1rem;
   scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .movie-card {
@@ -68,6 +68,7 @@
   padding-left: 1rem;
   margin-right: 1rem;
   padding-right: 1rem;
+  margin-top: 3rem;
 }
 
 .best-reviewed-scroll {
@@ -78,12 +79,25 @@
 }
 
 .icons-imgs {
-  width: 30%;
+  width: 10%;
+  height: auto;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.icons-img2 {
+  width: 60%;
   height: auto;
 }
 
 .steps-container {
   display: flex;
+}
+.steps-container1 {
+  display: flex;
+  margin-top: 4rem;
 }
 
 .step-text-icon {
@@ -96,9 +110,16 @@
 }
 
 .step-text {
-  width: 50%;
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
+.fa-solid {
+  color: #ffb731;
+}
+
+/* navbar */
 header {
   position: relative;
   display: flex;
@@ -131,17 +152,6 @@ li a,
   background-color: #a70000;
 }
 
-li a:hover,
-#openCategoryMenu:hover {
-  color: black;
-  background-color: #a70000;
-}
-
-li a {
-  transition: all 0.3s ease;
-  background-color: #a70000;
-}
-
 li {
   background-color: #a70000;
 }
@@ -164,14 +174,32 @@ nav img {
 }
 
 .collapsible {
-  background-color: #a70000;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 1rem;
-  width: 100%;
+  background: none;
   border: none;
-  font-size: 1rem;
-  text-align: left;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 9pt;
+  cursor: pointer;
+}
+.nav-button,
+.collapsible {
+  all: unset;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9pt;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-button:hover,
+.collapsible:hover {
+  color: black;
+}
+
+.collapsible:hover {
+  color: black;
 }
 
 .content {
@@ -180,12 +208,15 @@ nav img {
   top: 100%;
   left: 0;
   background-color: #a70000;
-  width: max-content;
-  padding: 1rem;
+  width: fit-content;
+  padding: 0.5rem 1rem;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories-list {
+  display: block;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -195,7 +226,9 @@ nav img {
   color: white;
   text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .categories-list li a:hover {
@@ -218,4 +251,59 @@ nav img {
 }
 input {
   background-color: white;
+  color: black;
+}
+
+/*header*/
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.overlay h2 {
+  margin: 0.5rem 0;
+  background: none;
+}
+
+#button {
+  background-color: #a70000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-top: 2rem;
+}
+#button:hover {
+  background-color: #d70808;
 }
