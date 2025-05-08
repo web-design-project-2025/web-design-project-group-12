@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 fetch('movies.json')
   .then(response => response.json())
   .then(data => {
-    console.log('Movies loaded:', data);
 
     const movie = data.find(movie => movie.id === movieId);
     if(movie){
@@ -21,5 +20,4 @@ fetch('movies.json')
       document.getElementById("movie-container").innerHTML = "<p>Movie not found!</p>"
     }
   })
-  .catch(error => console.error('Failed to load JSON:', error));
 });
