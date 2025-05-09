@@ -107,7 +107,7 @@
 
   },
   {
-    "title":"Kill Bill: Vol 1" ,
+    "title":"Kill Bill: Vol 1",
     "id": 10,
     "genre": ["Action", "Kung Fu" ,"One-Person Army, Crime"],
     "release_year": 2003,
@@ -119,61 +119,61 @@
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title":"Smile 2",
     "id": 11,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":"",
-    "description":[""],
+    "genre": ["Psychological Horror", "showbiz drama", "Supernatural Horror", "Tragedy", "Horror", "Mystery", "Thriller"],
+    "release_year":2024,
+    "runtime":"127",
+    "main_cast":["Naomi Scott", "Rosemary DeWitt", "Lukas Gage"],
+    "description":"About to embark on a world tour, global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events. Overwhelmed by the escalating horrors and the pressures of fame, Skye is forced to face her past.",
     "rating":"",
     "detail_image":""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title":"Us",
     "id": 12,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
+    "genre": ["Dark comedy", "Psychological Horror", "Teen Horror", "Horror", "Mystery", "Thriller"],
+    "release_year":2019,
+    "runtime":"116",
+    "main_cast":["Lupita Nyong'o", "Winston Duke", "Elisabeth Moss"],
+    "description":"In order to get away from their busy lives, the Wilson family takes a vacation to Santa Cruz, California. At night, four strangers break into Adelaide's childhood home. The family is shocked to find out that the intruders look like them.",
     "rating":"",
     "detail_image":""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title":"The Conjuring",
     "id": 13,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
+    "genre": ["Supernatural Horror", "Suspense Mystery", "Horror", "Mystery", "Thriller"],
+    "release_year":2013,
+    "runtime":"112",
+    "main_cast":["Patrick Wilson", "Vera Farmiga", "Ron LIvingston", "Lili Taylor"],
+    "description":"Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
     "rating":"",
     "detail_image":""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title":"M3gan",
     "id": 14,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
+    "genre": ["Artificial Intelligence", "Cyber Thriller", "Dark Comedy", "Slasher Horror", "Horror", "Sci-Fi", "Thriller"],
+    "release_year":"2022",
+    "runtime":"102",
+    "main_cast":["Allison Williams", "Violet McGraw", "Amie Donald"],
+    "description":"When robotics engineer Gemma becomes the guardian of her orphaned niece, Cady, she thinks her new invention, a robotic AI, will be a good companion. However, M3GAN begins to behave in unexpected and shocking ways.",
     "rating":"",
     "detail_image":""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title":"It",
     "id": 15,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
+    "genre": ["Monster Horror, Supernatural Horror, Horror"],
+    "release_year":"2017",
+    "runtime":"135",
+    "main_cast":["Bill Skarsgård", "Finn Wolfhard", "Jaeden Martell"],
+    "description":" In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
     "rating":"",
     "detail_image":""
 

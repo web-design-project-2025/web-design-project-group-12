@@ -1,3 +1,4 @@
+//Movie pages logic with JSON
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const movieId = Number(urlParams.get("id"));
