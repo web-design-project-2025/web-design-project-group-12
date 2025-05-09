@@ -225,6 +225,10 @@ input[type="text"],
   }
 }
 
+/*Trashcan*/
+.fa-solid.fa-trash-can {
+}
+
 /* .stars i,
 .post-button {
   transition: color 0.3s ease;
