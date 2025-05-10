@@ -176,8 +176,9 @@ nav img {
 .content.show {
   display: block;
 }
-input {
-  background-color: white;
+
+#nav-search {
+  background-color: rgb(134, 134, 134);
   color: black;
 }
 
@@ -336,7 +337,7 @@ input {
 }
 
 /*The text boxes*/
-input[type="text"],
+.input-review[type="text"],
 .inputtext {
   background-color: #d9d9d9;
   width: 50%;
