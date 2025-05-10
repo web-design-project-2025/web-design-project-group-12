@@ -22,3 +22,17 @@ fetch('movies.json')
     }
   })
 });
+
+//Fetching API for Top Rated movies
+// fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=your_api_key_here&language=en-US&page=1")
+
+// AsyncHttpClient client = new DefaultAsyncHttpClient();
+// client.prepare("GET", "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1")
+//   .setHeader("accept", "application/json")
+//   .setHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNWM1MDY1OTUyYmU3YWJmZDQ1NzIyOGYyYzQ2NzhlZCIsIm5iZiI6MTc0NjcxMDQwNy4yNjgsInN1YiI6IjY4MWNhZjg3ZDQ0MzU3ODdhNTNlYzhiYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.g9WS-FrhDk2wXZIdh0FiAO051sIA6dwGXdrlkmFWRqw")
+//   .execute()
+//   .toCompletableFuture()
+//   .thenAccept(System.out::println)
+//   .join();
+
+// client.close();
