@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     false,
     false,
   ];
-  //let clicked = [false, false, false, false, false];
 
   function updateStars() {
     stars.forEach((star, index) => {
@@ -26,40 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
       updateStars();
     });
   });
-  updateStars();
 });
 
 /*Posting the review*/
-// document.getElementById("review-form").addEventListener("button", function (e) {
-//   e.preventDefault();
-
-//   const title = document.getElementById("title").value;
-//   const text = document.getElementById("text").value;
-//   const stars = parseInt(document.getElementById("stars").value);
-//   const starsCount = document.querySelectorAll(".stars i.clicked").length;
-
-//   if (!title || !text || starsCount === 0) {
-//     alert("Please fill in all fields.");
-//     return;
-//   }
-
-//   const newReview = {
-//     title: title,
-//     text: text,
-//     stars: stars,
-//   };
-
-//   const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-//   reviews.push(newReview);
-//   localStorage.setItem("reviews", JSON.stringify(reviews));
-//   const review = { title, text, stars: starsCount };
-//   let allReviews = JSON.parse(localStorage.getItem("reviews")) || [];
-//   allReviews.push(review);
-//   localStorage.setItem("reviews", JSON.stringify(allReviews));
-
-//   window.location.href = "account.html";
-// });
-
 document.getElementById("button").addEventListener("click", function (e) {
   e.preventDefault();
 
