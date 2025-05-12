@@ -25,23 +25,6 @@ if (reviews.length === 0) {
     .join("");
 }
 
-// const trashIcons = document.querySelectorAll(".fa-trash-can");
-// trashIcons.forEach((trashIcon) => {
-//   trashIcon.addEventListener("click", function () {
-//     // for (let review of reviews) {
-//     //   // trashIcon.getAttribute('data-id') = reviews.indexOf(review);
-//     //   reviews.splice(reviews.indexOf(review), 1);
-//     //   console.log(reviews.indexOf(review) + " " + review.title);
-//     //   localStorage.setItem("reviews", JSON.stringify(reviews));
-//     //   renderReviews();
-//     // }
-//     console.log(trashIcons);
-//     let review = reviews[trashIcons.indexOf(trashIcon)];
-//     reviews.splice(review, 1);
-//     localStorage.setItem("reviews", JSON.stringify(reviews));
-//   });
-// });
-
 const trashIcons = document.querySelectorAll(".fa-trash-can");
 console.log(reviews);
 console.log(trashIcons);
@@ -53,33 +36,6 @@ for (let i = 0; i < trashIcons.length; i++) {
     window.location.reload();
   });
 }
-// for (let review of reviews) {
-//   // trashIcon.getAttribute('data-id') = reviews.indexOf(review);
-//   reviews.splice(reviews.indexOf(review), 1);
-//   console.log(reviews.indexOf(review) + " " + review.title);
-//   localStorage.setItem("reviews", JSON.stringify(reviews));
-//   renderReviews();
-//
-
-// // Function to attach delete (trash icon) event listeners
-// function attachTrashEvents() {
-//   const trashIcons = document.querySelectorAll(".fa-trash-can");
-//   trashIcons.forEach((trashIcon) => {
-//     trashIcon.addEventListener("click", function () {
-//       const displayIndex = Number(this.dataset.);
-
-//       // Since we reversed the array for display, we reverse the index to match the original
-//       const actualIndex = reviews.length - 1 - displayIndex;
-
-//       // Remove the review and update localStorage
-//       reviews.splice(actualIndex, 1);
-//       localStorage.setItem("reviews", JSON.stringify(reviews));
-
-//       // Re-render the reviews
-//       renderReviews();
-//     });
-//   });
-// }
 
 renderReviews();
 
