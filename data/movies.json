@@ -1,181 +1,181 @@
 [
   {
-    "title":"How to Lose a Guy in 10 Days",
+    "title": "How to Lose a Guy in 10 Days",
     "id": 1,
     "genre": ["Romance", "Comedy"],
     "release_year": 2003,
-    "runtime":"1h 56m",
-    "main_cast":["Kate Hudson", "Matthew McConaughey", "Kathryn Hahn"],
-    "description":"Andie Anderson, a writer at a women's magazine, tries to drive a man away in 10 days for an article—only to meet Benjamin Barry, who has a bet of his own: to make a woman fall in love with him in 10 days. Romantic chaos follows",
-    "rating":"",
-    "detail_image":""
+    "runtime":" 1h 56m",
+    "main_cast": ["Kate Hudson", "Matthew McConaughey", "Kathryn Hahn"],
+    "description": "Andie Anderson, a writer at a women's magazine, tries to drive a man away in 10 days for an article—only to meet Benjamin Barry, who has a bet of his own: to make a woman fall in love with him in 10 days. Romantic chaos follows.",
+    "rating": "fa-solid fa-star",
+    "detail_image": "detail_images/how-to-lose-a-guy.jpeg"
   },
   {
-    "title":"The Holiday",
+    "title": "The Holiday",
     "id": 2,
     "genre": ["Romance", "Comedy"],
-    "release_year":2006,
-    "runtime":"2h 16m",
-    "main_cast":["Cameron Diaz", "Kate Winslet", "Jude Law", "Jack Black"],
-    "description":"The Holiday is a heartwarming romantic comedy about two women from opposite sides of the world who swap homes for the holidays to escape their heartbreaks. Amanda, a successful movie trailer editor from Los Angeles, and Iris, a lovelorn journalist from England, find unexpected love and new perspectives while living in each other’s shoes.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2006,
+    "runtime": "2h 16m",
+    "main_cast": ["Cameron Diaz", "Kate Winslet", "Jude Law", "Jack Black"],
+    "description": "The Holiday is a heartwarming romantic comedy about two women from opposite sides of the world who swap homes for the holidays to escape their heartbreaks. Amanda, a successful movie trailer editor from Los Angeles, and Iris, a lovelorn journalist from England, find unexpected love and new perspectives while living in each other’s shoes.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"Paper Towns",
+    "title": "Paper Towns",
     "id": 3,
     "genre": ["Romance", "Drama"],
-    "release_year":2015,
-    "runtime":"1h 49m",
-    "main_cast":["Nat Wolff", "Cara Delevingne", "Justice Smith", "Halston Sage", "Austin Abrams"],
-    "description":"Paper Towns follows the story of Quentin, a high school senior who has spent a lifetime loving the mysterious girl next door, Margo. After a wild night of adventure together, Margo disappears—leaving behind clues only Quentin seems to understand. As he follows the trail with his friends, the journey becomes more than just a search for a girl—it becomes a quest for self-discovery. Based on the bestselling novel by John Green, the film blends coming-of-age moments with mystery and romance in a thoughtful and quirky teen road trip story.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2015,
+    "runtime": "1h 49m",
+    "main_cast": ["Nat Wolff", "Cara Delevingne", "Justice Smith", "Halston Sage", "Austin Abrams"],
+    "description": "Paper Towns follows the story of Quentin, a high school senior who has spent a lifetime loving the mysterious girl next door, Margo. After a wild night of adventure together, Margo disappears—leaving behind clues only Quentin seems to understand. As he follows the trail with his friends, the journey becomes more than just a search for a girl—it becomes a quest for self-discovery. Based on the bestselling novel by John Green, the film blends coming-of-age moments with mystery and romance in a thoughtful and quirky teen road trip story.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"Anyone but You",
+    "title": "Anyone but You",
     "id": 4,
     "genre": ["Romance", "Comedy"],
-    "release_year":2023,
-    "runtime":"1h 43m",
-    "main_cast":["Sydney Sweeney", "Glen Powell", "Alexandra Shipp", "Gata", "Hadley Robinson", "Dermot Mulroney", "Rachel Griffiths", "Darren Barnet"],
-    "description":"Anyone But You is a 2023 American romantic comedy directed by Will Gluck, who co-wrote the screenplay with Ilana Wolpert. Loosely inspired by William Shakespeare's Much Ado About Nothing, the film stars Sydney Sweeney and Glen Powell as Bea and Ben, two individuals who, after an amazing first date, find their fiery attraction turning ice cold. However, when they find themselves unexpectedly reunited at a destination wedding in Australia, they decide to pretend to be a couple to navigate the social pressures of the event.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2023,
+    "runtime": "1h 43m",
+    "main_cast": ["Sydney Sweeney", "Glen Powell", "Alexandra Shipp", "Gata", "Hadley Robinson", "Dermot Mulroney", "Rachel Griffiths", "Darren Barnet"],
+    "description": "Anyone But You is a 2023 American romantic comedy directed by Will Gluck, who co-wrote the screenplay with Ilana Wolpert. Loosely inspired by William Shakespeare's Much Ado About Nothing, the film stars Sydney Sweeney and Glen Powell as Bea and Ben, two individuals who, after an amazing first date, find their fiery attraction turning ice cold. However, when they find themselves unexpectedly reunited at a destination wedding in Australia, they decide to pretend to be a couple to navigate the social pressures of the event.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"Five Feet Apart",
+    "title": "Five Feet Apart",
     "id": 5,
     "genre": ["Romance", "Drama"],
-    "release_year":2019,
-    "runtime":"1h 56m",
-    "main_cast":["Haley Lu Richardson", "Cole Sprouse", "Moisés Arias"],
-    "description":"Seventeen-year-old Stella Grant is a cystic fibrosis patient who spends much of her time in the hospital, adhering to routines and maintaining self-control. Her life takes a turn when she meets Will Newman, another CF patient who challenges her perspectives. As their connection deepens, they must navigate the complexities of their illness, which requires them to stay physically apart, leading them to find unique ways to connect emotionally.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2019,
+    "runtime": "1h 56m",
+    "main_cast": ["Haley Lu Richardson", "Cole Sprouse", "Moisés Arias"],
+    "description": "Seventeen-year-old Stella Grant is a cystic fibrosis patient who spends much of her time in the hospital, adhering to routines and maintaining self-control. Her life takes a turn when she meets Will Newman, another CF patient who challenges her perspectives. As their connection deepens, they must navigate the complexities of their illness, which requires them to stay physically apart, leading them to find unique ways to connect emotionally.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"Dune",
+    "title": "Dune",
     "id": 6,
     "genre": ["Action", "Sci-Fi", "Adventure"],
-    "release_year":2021,
-    "runtime":"2h 35m",
-    "main_cast":["Timothèe Chalamet", "Zendaya", "Rebecca Ferguson", "Jason Momoa"],
-    "description":"Dune is a sci-fi epic that follows Paul Atreides, a gifted young noble whose family is thrust into a deadly political struggle over the desert planet Arrakis. The planet is the universe’s only source of “spice,” a powerful substance that grants extraordinary abilities and fuels space travel. As political rivalries unfold, Paul must navigate betrayal, prophecy, and destiny while traversing the planet for powerful allies, the Fremen people.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2021,
+    "runtime": "2h 35m",
+    "main_cast": ["Timothèe Chalamet", "Zendaya", "Rebecca Ferguson", "Jason Momoa"],
+    "description": "Dune is a sci-fi epic that follows Paul Atreides, a gifted young noble whose family is thrust into a deadly political struggle over the desert planet Arrakis. The planet is the universe’s only source of “spice,” a powerful substance that grants extraordinary abilities and fuels space travel. As political rivalries unfold, Paul must navigate betrayal, prophecy, and destiny while traversing the planet for powerful allies, the Fremen people.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"The Dark Knight",
+    "title": "The Dark Knight",
     "id": 7,
     "genre": ["Action", "Superhero", "Tragedy"],
-    "release_year":2008,
-    "runtime":"2h 32m",
-    "main_cast":["Christian Bale", "Heath Ledger", "Morgan Freeman", "Maggie Gyllenhaal", "Michael Caine"],
-    "description":"The Dark Knight plunges Gotham into chaos as Batman faces his most formidable foe yet—the Joker, a maniacal criminal mastermind who thrives on anarchy. With the city's soul at stake, Batman joins forces with Lieutenant Gordon and District Attorney Harvey Dent to dismantle the Joker’s deadly game. As lines blur between hero and vigilante, the film dives deep into themes of justice, sacrifice, and the thin veil separating order from chaos.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2008,
+    "runtime": "2h 32m",
+    "main_cast": ["Christian Bale", "Heath Ledger", "Morgan Freeman", "Maggie Gyllenhaal", "Michael Caine"],
+    "description": "The Dark Knight plunges Gotham into chaos as Batman faces his most formidable foe yet—the Joker, a maniacal criminal mastermind who thrives on anarchy. With the city's soul at stake, Batman joins forces with Lieutenant Gordon and District Attorney Harvey Dent to dismantle the Joker’s deadly game. As lines blur between hero and vigilante, the film dives deep into themes of justice, sacrifice, and the thin veil separating order from chaos.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"San Andreas",
+    "title": "San Andreas",
     "id": 8,
     "genre": ["Action", "Disaster", "Thriller", "Urban Adventure"],
-    "release_year":2015,
-    "runtime":"1h 54m",
-    "main_cast":["Dwayne Johnson", "Carla Gugino", "Alexandra Daddario", "Colton Haynes"],
-    "description":"When a massive earthquake rips through California, rescue pilot Ray Gaines embarks on a dangerous mission to save his estranged wife and daughter. The San Andreas Fault has unleashed total devastation. From crumbling skyscrapers to a monstrous tsunami, the destruction is relentless. Ray must navigate the chaos with courage and determination. It's a race against time in this gripping disaster thriller.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 2015,
+    "runtime": "1h 54m",
+    "main_cast": ["Dwayne Johnson", "Carla Gugino", "Alexandra Daddario", "Colton Haynes"],
+    "description": "When a massive earthquake rips through California, rescue pilot Ray Gaines embarks on a dangerous mission to save his estranged wife and daughter. The San Andreas Fault has unleashed total devastation. From crumbling skyscrapers to a monstrous tsunami, the destruction is relentless. Ray must navigate the chaos with courage and determination. It's a race against time in this gripping disaster thriller.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"The Fifth Element",
+    "title": "The Fifth Element",
     "id": 9,
     "genre": ["Action", "Sci-Fi", "Adventure"],
-    "release_year":1997,
-    "runtime":"2h 6m",
-    "main_cast":["Bruce Willis", "Milla Jovovich", "Gary Oldman", "Ian Holm", "Chris Tucker"],
-    "description":"In a futuristic world filled with chaos and technology, a cab driver unexpectedly finds himself at the center of a quest to save humanity. A mysterious woman appears, and her arrival sets off a chain of extraordinary events. Together, they must confront a powerful threat. With stunning visuals and unforgettable characters, The Fifth Element blends sci-fi, action, and humor into a unique cinematic experience.",
-    "rating":"",
-    "detail_image":""
+    "release_year": 1997,
+    "runtime": "2h 6m",
+    "main_cast": ["Bruce Willis", "Milla Jovovich", "Gary Oldman", "Ian Holm", "Chris Tucker"],
+    "description": "In a futuristic world filled with chaos and technology, a cab driver unexpectedly finds himself at the center of a quest to save humanity. A mysterious woman appears, and her arrival sets off a chain of extraordinary events. Together, they must confront a powerful threat. With stunning visuals and unforgettable characters, The Fifth Element blends sci-fi, action, and humor into a unique cinematic experience.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"Kill Bill: Vol 1" ,
+    "title": "Kill Bill: Vol 1",
     "id": 10,
     "genre": ["Action", "Kung Fu" ,"One-Person Army, Crime"],
     "release_year": 2003,
-    "runtime":"1h 51m",
-    "main_cast":["Uma Thurman", "David Carradine", "Daryl Hannah", "Michael Madsen", "Lucy Liu"],
-    "description":" A woman awakens from a coma with one thing on her mind: revenge. Armed with a katana and a relentless will, she sets out on a violent journey. Every step brings her closer to the people who wronged her. Stylish, intense, and unforgettable, Kill Bill: Vol. 1 is a blood-soaked ballet of vengeance.",
-    "rating":"",
-    "detail_image":""
+    "runtime": "1h 51m",
+    "main_cast": ["Uma Thurman", "David Carradine", "Daryl Hannah", "Michael Madsen", "Lucy Liu"],
+    "description": " A woman awakens from a coma with one thing on her mind: revenge. Armed with a katana and a relentless will, she sets out on a violent journey. Every step brings her closer to the people who wronged her. Stylish, intense, and unforgettable, Kill Bill: Vol. 1 is a blood-soaked ballet of vengeance.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title": "Smile 2",
     "id": 11,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":"",
-    "description":[""],
-    "rating":"",
-    "detail_image":""
+    "genre": ["Psychological Horror", "showbiz drama", "Supernatural Horror", "Tragedy", "Horror", "Mystery", "Thriller"],
+    "release_year": 2024,
+    "runtime": "127",
+    "main_cast": ["Naomi Scott", "Rosemary DeWitt", "Lukas Gage"],
+    "description" :"About to embark on a world tour, global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events. Overwhelmed by the escalating horrors and the pressures of fame, Skye is forced to face her past.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title": "Us",
     "id": 12,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
-    "rating":"",
-    "detail_image":""
+    "genre": ["Dark comedy", "Psychological Horror", "Teen Horror", "Horror", "Mystery", "Thriller"],
+    "release_year": 2019,
+    "runtime": "116",
+    "main_cast": ["Lupita Nyong'o", "Winston Duke", "Elisabeth Moss"],
+    "description": "In order to get away from their busy lives, the Wilson family takes a vacation to Santa Cruz, California. At night, four strangers break into Adelaide's childhood home. The family is shocked to find out that the intruders look like them.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title": "The Conjuring",
     "id": 13,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
-    "rating":"",
-    "detail_image":""
+    "genre": ["Supernatural Horror", "Suspense Mystery", "Horror", "Mystery", "Thriller"],
+    "release_year": 2013,
+    "runtime": "112",
+    "main_cast": ["Patrick Wilson", "Vera Farmiga", "Ron LIvingston", "Lili Taylor"],
+    "description": "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title": "M3gan",
     "id": 14,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
-    "rating":"",
-    "detail_image":""
+    "genre": ["Artificial Intelligence", "Cyber Thriller", "Dark Comedy", "Slasher Horror", "Horror", "Sci-Fi", "Thriller"],
+    "release_year": 2022,
+    "runtime": "102",
+    "main_cast": ["Allison Williams", "Violet McGraw", "Amie Donald"],
+    "description": "When robotics engineer Gemma becomes the guardian of her orphaned niece, Cady, she thinks her new invention, a robotic AI, will be a good companion. However, M3GAN begins to behave in unexpected and shocking ways.",
+    "rating": "",
+    "detail_image": ""
 
   },
   {
-    "title":"How to Lose a Guy in 10 Days" ,
+    "title": "It",
     "id": 15,
-    "genre": ["Romance", "Comedy"],
-    "release_year":"",
-    "runtime":"",
-    "main_cast":[""],
-    "description":"",
-    "rating":"",
-    "detail_image":""
+    "genre": ["Monster Horror, Supernatural Horror, Horror"],
+    "release_year": 2017,
+    "runtime": "135",
+    "main_cast": ["Bill Skarsgård", "Finn Wolfhard", "Jaeden Martell"],
+    "description":" In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
+    "rating": "",
+    "detail_image": ""
 
   }
 ]
