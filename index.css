@@ -493,3 +493,18 @@ input {
     transform: translate(-50%, -60%);
   }
 }
+
+/*WATCHLIST*/
+#watchlist-container img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}

@@ -250,3 +250,22 @@ h3 {
 .stars i.selected {
   color: #ffb731;
 } */
+<<<<<<< HEAD
+=======
+
+/* .stars i:hover {
+  color: #ffe58a;
+  transition: color 0.3s ease;
+}
+
+.stars i:hover {
+  color: #ffe58a;
+  transition: color 0.3s ease;
+}
+
+.stars i:hover ~ i {
+  color: blue;
+}  */
+
+/*WATCHLIST*/
+>>>>>>> origin/feature/watchlist
