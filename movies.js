@@ -1,57 +1,51 @@
-
-
 //Movie pages logic with JSON
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const movieId = Number(urlParams.get("id"));
 
-fetch('data/movies.json')
-  .then(response => response.json())
-  .then(data => {
-    const movie = data.find(movie => movie.id === movieId);
-    if(movie){
-      document.getElementById("movie-title").textContent = movie.title;
-      document.getElementById("movie-description").textContent = movie.description;
-      document.getElementById("movie-runtime").textContent = movie.runtime;
-      document.getElementById("movie-cast").textContent = movie.main_cast;
-      document.getElementById("movie-genre").textContent = movie.genre;
-      document.getElementById("movie-rating").className = movie.rating;
-      document.getElementById("movie-year").textContent = movie.release_year;
-      document.getElementById("movie-image").src = movie.detail_image;
-    } else {
-      const movieContainer = document.getElementById("movie-container");
-      if (movieContainer) {
-      movieContainer.innerHTML = "<p>Movie not found!</p>";
+  fetch("data/movies.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const movie = data.find((movie) => movie.id === movieId);
+      if (movie) {
+        document.getElementById("movie-title").textContent = movie.title;
+        document.getElementById("movie-description").textContent =
+          movie.description;
+        document.getElementById("movie-runtime").textContent = movie.runtime;
+        document.getElementById("movie-cast").textContent = movie.main_cast;
+        document.getElementById("movie-genre").textContent = movie.genre;
+        document.getElementById("movie-rating").className = movie.rating;
+        document.getElementById("movie-year").textContent = movie.release_year;
+        document.getElementById("movie-image").src = movie.detail_image;
+      } else {
+        const movieContainer = document.getElementById("movie-container");
+        if (movieContainer) {
+          movieContainer.innerHTML = "<p>Movie not found!</p>";
+        }
       }
-    }
-  })
+    });
 });
 
 // Javascript to load in movies with thumbnails https://chatgpt.com/share/68228176-34f0-8003-83c3-7248dcc15dfb
 document.addEventListener("DOMContentLoaded", function () {
-  fetch('data/movies.json')
-    .then(response => response.json())
-    .then(data => {
+  fetch("data/movies.json")
+    .then((response) => response.json())
+    .then((data) => {
       const container = document.getElementById("movie-thumbnails");
 
-
-      data.forEach(movie => {
+      data.forEach((movie) => {
         const li = document.createElement("li");
-
 
         const link = document.createElement("a");
         link.href = `movies.html?id=${movie.id}`;
         link.title = movie.title;
 
-
         const img = document.createElement("img");
         img.src = movie.thumbnail;
         img.alt = movie.title;
 
-
         const title = document.createElement("p");
         title.textContent = movie.title;
-
 
         link.appendChild(img);
         link.appendChild(title);
@@ -61,6 +55,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 // End of citation
+
+//Movies for homepage
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("data/movies.json")
+    .then((response) => response.json())
+    .then((movies) => {
+      const container = document.getElementById("best-reviewed-container");
+
+      const bestRatedTitles = [
+        "The Holiday",
+        "How to Lose a Guy in 10 Days",
+        "Paper Towns",
+        "Five Feet Apart",
+        "Anyone but You",
+        "Dune",
+        "M3gan",
+      ];
+
+      const bestMovies = movies.filter((movie) =>
+        bestRatedTitles.includes(movie.title)
+      );
+
+      bestMovies.forEach((movie) => {
+        const card = document.createElement("div");
+        card.className = "movie-card";
+
+        const img = document.createElement("img");
+        img.src = movie.thumbnail;
+        img.alt = movie.title;
+
+        const stars = document.createElement("div");
+        stars.className = "stars1";
+
+        for (let i = 0; i < 5; i++) {
+          const star = document.createElement("i");
+          star.className = "fa-solid fa-star";
+          stars.appendChild(star);
+        }
+
+        card.appendChild(img);
+        card.appendChild(stars);
+
+        container.appendChild(card);
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading best reviewed movies:", error);
+    });
+});
+
+//end movies homepage
 
 function addToWatchlist() {
   const movieTitle = document.getElementById("movie-title").innerText;
@@ -109,7 +155,6 @@ window.onload = function () {
     heartButton.addEventListener("click", addToWatchlist);
   }
 };
-
 
 /*The star rating*/
 document.addEventListener("DOMContentLoaded", function () {
