@@ -82,6 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const card = document.createElement("div");
         card.className = "movie-card";
 
+        const link = document.createElement("a");
+        link.href = `movies.html?id=${movie.id}`;
+        link.title = movie.title;
+
         const img = document.createElement("img");
         img.src = movie.thumbnail;
         img.alt = movie.title;
@@ -95,9 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
           stars.appendChild(star);
         }
 
-        card.appendChild(img);
-        card.appendChild(stars);
-
+        link.appendChild(img);
+        link.appendChild(stars);
+        card.appendChild(link);
         container.appendChild(card);
       });
     })
@@ -105,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error loading best reviewed movies:", error);
     });
 });
-
 //end movies homepage
 
 function addToWatchlist() {
