@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="account.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <h2>Account</h2>
+    <div class="profile" id="profile">
+      <img
+        src="images/lillyprofile.jpg"
+        alt="Lilly Johansson profilepicture"
+        class="profile-img"
+      />
+      <div class="profile-info">
+        <h3 id="profilename">Lilly Johansson</h3>
+        <p id="profile-genre">FAVORITE GENRE: Romance and fantasy</p>
+      </div>
+    </div>
+
+    <h3>Your Reviews</h3>
+    <a href="review.html" id="button"> Add a new review </a>
+    <div id="review-display"></div>
+    <div id="snackbar">Your review has been posted</div>
+  </body>
 </html>
