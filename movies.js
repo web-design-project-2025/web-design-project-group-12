@@ -1,3 +1,5 @@
+
+
 //Movie pages logic with JSON
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
@@ -6,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 fetch('data/movies.json')
   .then(response => response.json())
   .then(data => {
-   console.log (data.map((movie)=>movie))
     const movie = data.find(movie => movie.id === movieId);
     if(movie){
       document.getElementById("movie-title").textContent = movie.title;
@@ -18,10 +19,96 @@ fetch('data/movies.json')
       document.getElementById("movie-year").textContent = movie.release_year;
       document.getElementById("movie-image").src = movie.detail_image;
     } else {
-      document.getElementById("movie-container").innerHTML = "<p>Movie not found!</p>"
+      const movieContainer = document.getElementById("movie-container");
+      if (movieContainer) {
+      movieContainer.innerHTML = "<p>Movie not found!</p>";
+      }
     }
   })
 });
+
+// Javascript to load in movies with thumbnails https://chatgpt.com/share/68228176-34f0-8003-83c3-7248dcc15dfb
+document.addEventListener("DOMContentLoaded", function () {
+  fetch('data/movies.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("movie-thumbnails");
+
+
+      data.forEach(movie => {
+        const li = document.createElement("li");
+
+
+        const link = document.createElement("a");
+        link.href = `movies.html?id=${movie.id}`;
+        link.title = movie.title;
+
+
+        const img = document.createElement("img");
+        img.src = movie.thumbnail;
+        img.alt = movie.title;
+
+
+        const title = document.createElement("p");
+        title.textContent = movie.title;
+
+
+        link.appendChild(img);
+        link.appendChild(title);
+        li.appendChild(link);
+        container.appendChild(li);
+      });
+    });
+});
+// End of citation
+
+function addToWatchlist() {
+  const movieTitle = document.getElementById("movie-title").innerText;
+  const movieImage = document.getElementById("movie-image").src;
+
+  const movie = {
+    title: movieTitle,
+    image: movieImage,
+  };
+
+  let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+  if (!watchlist.some((m) => m.title === movie.title)) {
+    watchlist.push(movie);
+    localStorage.setItem("watchlist", JSON.stringify(watchlist));
+  }
+
+  const snackbar = document.getElementById("alert-snackbar");
+  if (snackbar) {
+    snackbar.classList.add("show");
+    setTimeout(() => snackbar.classList.remove("show"), 3000);
+  }
+}
+
+window.onload = function () {
+  const watchlistContainer = document.getElementById("watchlist-container");
+
+  if (watchlistContainer) {
+    let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+    watchlist.forEach((movie) => {
+      const card = document.createElement("div");
+      card.classList.add("movie-card");
+
+      const img = document.createElement("img");
+      img.src = movie.image;
+      img.alt = movie.title;
+
+      card.appendChild(img);
+      watchlistContainer.appendChild(card);
+    });
+  }
+
+  const heartButton = document.getElementById("heart-button");
+  if (heartButton) {
+    heartButton.addEventListener("click", addToWatchlist);
+  }
+};
 
 
 /*The star rating*/
@@ -34,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
     false,
     false,
   ];
-  //let clicked = [false, false, false, false, false];
 
   function updateStars() {
     stars.forEach((star, index) => {
@@ -52,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
       updateStars();
     });
   });
-  updateStars();
 });
 
+/*Posting the review*/
 document.getElementById("button").addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -79,7 +165,7 @@ document.getElementById("button").addEventListener("click", function (e) {
   allReviews.push(review);
   localStorage.setItem("reviews", JSON.stringify(allReviews));
 
-  window.location.href = "movie.html";
+  window.location.href = "account.html";
 });
 
 /*Inspiration through W3schools Accesed: 07/05/25. https://www.w3schools.com/howto/howto_js_snackbar.asp */
