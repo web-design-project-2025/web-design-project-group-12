@@ -1,3 +1,5 @@
+
+
 //Movie pages logic with JSON
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
@@ -17,7 +19,6 @@ fetch('data/movies.json')
       document.getElementById("movie-year").textContent = movie.release_year;
       document.getElementById("movie-image").src = movie.detail_image;
     } else {
-      // document.getElementById("movie-container").innerHTML = "<p>Movie not found!</p>"
       const movieContainer = document.getElementById("movie-container");
       if (movieContainer) {
       movieContainer.innerHTML = "<p>Movie not found!</p>";
@@ -59,6 +60,55 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 });
+// End of citation
+
+function addToWatchlist() {
+  const movieTitle = document.getElementById("movie-title").innerText;
+  const movieImage = document.getElementById("movie-image").src;
+
+  const movie = {
+    title: movieTitle,
+    image: movieImage,
+  };
+
+  let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+  if (!watchlist.some((m) => m.title === movie.title)) {
+    watchlist.push(movie);
+    localStorage.setItem("watchlist", JSON.stringify(watchlist));
+  }
+
+  const snackbar = document.getElementById("alert-snackbar");
+  if (snackbar) {
+    snackbar.classList.add("show");
+    setTimeout(() => snackbar.classList.remove("show"), 3000);
+  }
+}
+
+window.onload = function () {
+  const watchlistContainer = document.getElementById("watchlist-container");
+
+  if (watchlistContainer) {
+    let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+    watchlist.forEach((movie) => {
+      const card = document.createElement("div");
+      card.classList.add("movie-card");
+
+      const img = document.createElement("img");
+      img.src = movie.image;
+      img.alt = movie.title;
+
+      card.appendChild(img);
+      watchlistContainer.appendChild(card);
+    });
+  }
+
+  const heartButton = document.getElementById("heart-button");
+  if (heartButton) {
+    heartButton.addEventListener("click", addToWatchlist);
+  }
+};
 
 
 /*The star rating*/

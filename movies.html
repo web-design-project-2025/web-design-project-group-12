@@ -50,6 +50,7 @@
       </div>
       <div>
         <h1 id="movie-title"></h1>
+        <button id="heart-button"><i class="fa-solid fa-heart"></i></button>
         <i class="far-solid fa star"></i>
         <p><span id="movie-rating"></span></p>
         <p><strong>Genre:</strong> <span id="movie-genre"></span></p>
@@ -57,45 +58,9 @@
         <p><strong>Runtime:</strong> <span id="movie-runtime">/<span></p>
         <p><strong>Cast:</strong> <span id="movie-cast">/<span></p>
         <p id="movie-description"></p>
+        <div id="alert-snackbar">Movie have been added to your watchlist</div>
+
       </div>
-    </div>
-
-    <div id="reviews-container">
-      <h2>User Reviews</h2>
-      <div id="review-list"></div>
-    </div>
-
-    <div class="reviewpage">
-      <h2>Write a review</h2>
-      <input
-        type="text"
-        id="title"
-        name="movietitle"
-        placeholder="Movie title..."
-        required
-      />
-      <h3>How many stars would you like to give this movie?</h3>
-      <div class="stars">
-        <i class="fa-solid fa-star" data-index="1"></i>
-        <i class="fa-solid fa-star" data-index="2"></i>
-        <i class="fa-solid fa-star" data-index="3"></i>
-        <i class="fa-solid fa-star" data-index="4"></i>
-        <i class="fa-solid fa-star" data-index="5"></i>
-      </div>
-      <textarea
-        class="inputtext"
-        id="review-text"
-        name="reviewtext"
-        placeholder="Write your review here..."
-        required
-      ></textarea>
-      <a href="account.html" id="button">
-        Post <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-    <div id="alert-snackbar">Please fill in all required fields</div>
-
-
-    
+    </div>    
   </body>
 </html>
