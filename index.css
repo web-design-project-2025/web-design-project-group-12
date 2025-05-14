@@ -141,7 +141,8 @@ nav img {
   padding: 0;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.fa-trash-can:hover {
   color: black;
 }
 
