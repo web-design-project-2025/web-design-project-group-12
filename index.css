@@ -4,7 +4,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -245,10 +247,12 @@ nav img {
 
 .steps-container {
   display: flex;
+  color: white;
 }
 .steps-container1 {
   display: flex;
   margin-top: 4rem;
+  color: white;
 }
 
 .step-text-icon {
@@ -495,14 +499,6 @@ nav img {
 }
 
 /*EDITORIAL*/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-  color: white;
-}
 
 body {
   font-family: "Inter", sans-serif;
