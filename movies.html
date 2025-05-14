@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="movies.js" heref></script>
-  <link rel="stylesheet" href="movies.css">
+  <title>Movie</title>
+  <script src="movies.js" defer></script>
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
+  <script src=""></script>
 </head>
   <body>
     <header>
@@ -27,6 +28,10 @@
             </div>
           </li>
           <li>
+            <button onclick="location.href='movielist.html'" class="nav-button">
+              MOVIE LIST
+            </button>
+          </li>
             <button onclick="location.href='newreview.html'" class="nav-button">
               NEW REVIEW
             </button>
@@ -51,15 +56,13 @@
       <div>
         <h1 id="movie-title"></h1>
         <button id="heart-button"><i class="fa-solid fa-heart"></i></button>
-        <i class="far-solid fa star"></i>
-        <p><span id="movie-rating"></span></p>
+        <p><strong>Rating:</strong><span id="movie-rating"></span></p>
         <p><strong>Genre:</strong> <span id="movie-genre"></span></p>
         <p><strong>Relsease Year:</strong> <span id="movie-year"></span></p>
         <p><strong>Runtime:</strong> <span id="movie-runtime">/<span></p>
         <p><strong>Cast:</strong> <span id="movie-cast">/<span></p>
         <p id="movie-description"></p>
         <div id="alert-snackbar">Movie have been added to your watchlist</div>
-
       </div>
     </div>    
   </body>
