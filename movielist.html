@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="movies.js" heref></script>
-  <link rel="stylesheet" href="movies.css">
+  <title>Movie List</title>
+  <script src="movies.js" defer></script>
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
@@ -27,6 +27,10 @@
             </div>
           </li>
           <li>
+            <button onclick="location.href='movielist.html'" class="nav-button">
+              MOVIE LIST
+            </button>
+          </li>
             <button onclick="location.href='newreview.html'" class="nav-button">
               NEW REVIEW
             </button>
@@ -44,21 +48,14 @@
       </nav>
     </header>
 
-      <ul id="movie-thumbnails"></ul>
-      <!-- <li><a href="movies.html?id=1">How to Lose a Guy in 10 days</a></li>
-      <li><a href="movies.html?id=2">The Holiday</a></li>
-      <li><a href="movies.html?id=3">Paper Towns</a></li>
-      <li><a href="movies.html?id=4">Anyone but You</a></li>
-      <li><a href="movies.html?id=5">Five Feet Apart</a></li>
-      <li><a href="movies.html?id=6">Dune</a></li>
-      <li><a href="movies.html?id=7">The Dark Night</a></li>
-      <li><a href="movies.html?id=8">San Andreas</a></li>
-      <li><a href="movies.html?id=9">The Fifth Element</a></li>
-      <li><a href="movies.html?id=10">Kill Bill: Vol 1</a></li>
-      <li><a href="movies.html?id=11">Smile 2</a></li>
-      <li><a href="movies.html?id=12">Us</a></li>
-      <li><a href="movies.html?id=13">The Conjuring</a></li>
-      <li><a href="movies.html?id=14">M3gan</a></li>
-      <li><a href="movies.html?id=15">It</a></li> -->
+    <h3>Filter BY</h3>
+    <div id="filter-buttons">
+      <button class="button" onclick="filterMovies('All')">All</button>
+      <button onclick="filterMovies('Romance')">Romance</button>
+      <button onclick="filterMovies('Action')">Action</button>
+      <button onclick="filterMovies('Horror')">Horror</button>
+    </div>
+
+    <ul id="movie-thumbnails"></ul>
   </body>
 </html>
