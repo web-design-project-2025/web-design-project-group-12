@@ -413,6 +413,11 @@ nav img {
   color: white;
 } */
 
+.review-box .stars i {
+  pointer-events: none;
+  cursor: default !important;
+}
+
 .review-box {
   padding: 1rem;
   background-color: #a70000;
@@ -426,6 +431,10 @@ nav img {
 
 .review-box p {
   margin: 0.5rem 0;
+}
+
+.fa-trash-can {
+  cursor: pointer;
 }
 
 /*Snackbar*/
