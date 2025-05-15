@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie</title>
-  <script src="movies.js" defer></script>
-  <link rel="stylesheet" href="index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
-  <script src=""></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <script src="movies.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
-    <header>
-      <p id="logo">THE FINAL CUT</p>
-      <nav>
-        <ul>
-          <li class="collapsible-wrapper">
-            <button type="button" class="collapsible">CATEGORIES</button>
-            <div class="content">
-              <ul class="categories-list">
-                <li><a href="#">ROMANCE</a></li>
-                <li><a href="#">ACTION</a></li>
-                <li><a href="#">HORROR</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <button onclick="location.href='movielist.html'" class="nav-button">
-              MOVIE LIST
-            </button>
-          </li>
-            <button onclick="location.href='newreview.html'" class="nav-button">
-              NEW REVIEW
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='watchlist.html'" class="nav-button">
-              WATCHLIST
-            </button>
-          </li>
-          <li><input type="text" placeholder="Search.." /></li>
-          <li>
-            <a href="account.html"><img src="images/user.png" alt="user" /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <div id="movie-container">
       <div>
-        <img id="movie-image">
+        <img id="movie-image" />
       </div>
       <div>
         <h1 id="movie-title"></h1>
@@ -59,11 +28,26 @@
         <p><strong>Rating:</strong><span id="movie-rating"></span></p>
         <p><strong>Genre:</strong> <span id="movie-genre"></span></p>
         <p><strong>Relsease Year:</strong> <span id="movie-year"></span></p>
-        <p><strong>Runtime:</strong> <span id="movie-runtime">/<span></p>
-        <p><strong>Cast:</strong> <span id="movie-cast">/<span></p>
+        <p><strong>Runtime:</strong> <span id="movie-runtime">/</span></p>
+        <p><strong>Cast:</strong> <span id="movie-cast">/</span></p>
         <p id="movie-description"></p>
+
         <div id="alert-snackbar">Movie have been added to your watchlist</div>
       </div>
-    </div>    
+    </div>
+    <section class="reviews-section">
+      <h2>Reviews:</h2>
+      <a href="review.html" id="button"> Write a review </a>
+      <figure>
+        <p id="user-1" class="user-review"></p>
+        <p id="rating-1"></p>
+        <p id="review-1"></p>
+      </figure>
+      <figure>
+        <p id="user-2" class="user-review"></p>
+        <p id="rating-2"></p>
+        <p id="review-2"></p>
+      </figure>
+    </section>
   </body>
 </html>
