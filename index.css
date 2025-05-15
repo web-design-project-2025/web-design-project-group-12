@@ -232,47 +232,6 @@ nav img {
   padding-right: 1rem;
 }
 
-.icons-imgs {
-  width: 20%;
-  height: auto;
-  align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.icons-imgs2,
-.icons-imgs {
-  width: 20%;
-  height: auto;
-}
-
-.steps-container {
-  display: flex;
-  color: white;
-}
-.steps-container1 {
-  display: flex;
-  margin-top: 4rem;
-  color: white;
-}
-
-.step-text-icon {
-  display: flex;
-  flex-direction: column;
-}
-
-.step-text-icon figure {
-  width: 500px;
-}
-
-.step-text {
-  width: 60%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 /* MOVIE LIST */
 #movie-thumbnails {
   display: flex;
