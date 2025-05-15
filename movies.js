@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("movie-description").textContent =
           movie.description;
         document.getElementById("movie-runtime").textContent = movie.runtime;
-        document.getElementById("movie-cast").textContent = movie.main_cast;
-        document.getElementById("movie-genre").textContent = movie.genre;
+        document.getElementById("movie-cast").textContent = movie.main_cast.join(", ");
+        document.getElementById("movie-genre").textContent = movie.genre.join(", ");
         // document.getElementById("movie-rating").textContent = movie.rating;
         document.getElementById("movie-rating").innerHTML =
           '<i class="fa-solid fa-star star-icon"></i> ' + movie.rating + "/5";
@@ -231,11 +231,11 @@ function displayMovies(movies) {
     img.src = movie.thumbnail;
     img.alt = movie.title;
 
-    const title = document.createElement("p");
-    title.textContent = movie.title;
+    // const title = document.createElement("p");
+    // title.textContent = movie.title;
 
     link.appendChild(img);
-    link.appendChild(title);
+    // link.appendChild(title);
     li.appendChild(link);
     container.appendChild(li);
   });
