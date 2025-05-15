@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="index.css" />
-    <script src="navigationbar.js" defer></script>
+    <link rel="stylesheet" href="slay.css" />
     <script src="movies.js" defer></script>
+    <script src="homepage.js" defer></script>
 
     <script
       src="https://kit.fontawesome.com/87dc3e8f6e.js"
@@ -22,7 +23,18 @@
   </head>
   <body>
     <header>
+      <div class="mobile-header">
+        <button id="menu" onclick="openHamburgerNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
       <p id="logo">THE FINAL CUT</p>
+
+      <a href="account.html" class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
       <nav>
         <ul>
           <li>
@@ -41,10 +53,16 @@
             </button>
           </li>
           <li>
-            <a href="account.html"><img src="images/user.png" alt="user" /></a>
+            <a href="account.html"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
       </nav>
+
+      <div id="menubar" class="hamburgermenu">
+        <a href="movielist.html">MOVIE LIST</a>
+        <a href="review.html">NEW REVIEW</a>
+        <a href="watchlist.html">WATCHLIST</a>
+      </div>
     </header>
 
     <div class="image-container">
@@ -112,3 +130,9 @@
     </footer>
   </body>
 </html>
+
+<div class="mobile-header">
+  <button id="menu" onclick="openHamburgerNav()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</div>
