@@ -28,7 +28,7 @@ h3 {
   font-weight: 400;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -248,7 +248,7 @@ nav img {
   /* justify-content: center; */
 }
 
-#movie-thumbnail ul li{
+#movie-thumbnail ul li {
   width: 100%;
 }
 
@@ -270,12 +270,12 @@ nav img {
   object-fit: cover; */
 }
 
-#filter-container{
+#filter-container {
   padding-top: 2rem;
   padding-left: 2rem;
 }
 
-.filter-buttons{
+.filter-buttons {
   background-color: #959595;
   scale: 1rem;
   padding: 0.5rem 1rem;
@@ -360,7 +360,7 @@ nav img {
 
 /*Account*/
 
-#account-container{
+#account-container {
   padding: 2rem;
 }
 
@@ -511,7 +511,7 @@ nav img {
 
 /*WATCHLIST*/
 
-#watchlist-section{
+#watchlist-section {
   padding: 2rem;
 }
 #watchlist-container img {
