@@ -135,9 +135,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const stars = document.createElement("div");
         stars.className = "stars1";
 
+        const ratingStr = movie.rating;
+        const rating = parseInt(ratingStr.split("/")[0]);
+
         for (let i = 0; i < 5; i++) {
           const star = document.createElement("i");
-          star.className = "fa-solid fa-star";
+          if (i < rating) {
+            star.className = "fa-solid fa-star";
+          }
+
           stars.appendChild(star);
         }
 
@@ -187,11 +193,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const stars = document.createElement("div");
         stars.className = "stars1";
 
+        const ratingStr = movie.rating;
+        const rating = parseInt(ratingStr.split("/")[0]);
+
         for (let i = 0; i < 5; i++) {
           const star = document.createElement("i");
-          star.className = "fa-solid fa-star";
+          if (i < rating) {
+            star.className = "fa-solid fa-star";
+          }
           stars.appendChild(star);
         }
+
         link.appendChild(img);
         link.appendChild(stars);
         card.appendChild(link);
