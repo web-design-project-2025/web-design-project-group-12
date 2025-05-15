@@ -16,10 +16,38 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("movie-runtime").textContent = movie.runtime;
         document.getElementById("movie-cast").textContent = movie.main_cast;
         document.getElementById("movie-genre").textContent = movie.genre;
-        document.getElementById("movie-rating").textContent = movie.rating;
-        document.getElementById("movie-rating").className = "fa-solid fa-star";
+        // document.getElementById("movie-rating").textContent = movie.rating;
+        document.getElementById("movie-rating").innerHTML =
+          '<i class="fa-solid fa-star star-icon"></i> ' + movie.rating + "/5";
+        // document.getElementById("movie-rating").className = "fa-solid fa-star";
         document.getElementById("movie-year").textContent = movie.release_year;
         document.getElementById("movie-image").src = movie.detail_image;
+        //Recived help through Chat GPT, Accessed: 14/05/25 Link: https://chatgpt.com/share/6824ed04-0af0-8000-873e-3e62728c2720
+        //First review
+        if (movie.reviews.length > 0) {
+          document.getElementById("user-1").textContent =
+            movie.reviews[0].writer;
+          // document.getElementById(
+          //   "rating-1"
+          // ).textContent = `Rating: ${movie.reviews[0].rating}/5`;
+          document.getElementById("rating-1").innerHTML =
+            'Rating: <i class="fa-solid fa-star star-icon"></i> ' +
+            movie.reviews[0].rating +
+            "/5";
+          document.getElementById("review-1").textContent =
+            movie.reviews[0].text;
+        }
+        //Second review
+        if (movie.reviews.length > 1) {
+          document.getElementById("user-2").textContent =
+            movie.reviews[1].writer;
+          document.getElementById("rating-2").innerHTML =
+            'Rating: <i class="fa-solid fa-star star-icon"></i> ' +
+            movie.reviews[1].rating +
+            "/5";
+          document.getElementById("review-2").textContent =
+            movie.reviews[1].text;
+        }
 
         // Watchlist logic after data is loaded
         const heartButton = document.getElementById("heart-button");
