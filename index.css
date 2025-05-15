@@ -583,6 +583,7 @@ img,
   font-size: 1.1rem;
   font-weight: 400;
 }
+
 /*Editorial Section*/
 .editorial-section {
   display: flex;
@@ -663,4 +664,35 @@ img,
 
 .quote h3 {
   font-size: 2rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #a70000;
+  padding: 2rem;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a,
+.footer-copyright {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover {
+  color: black;
+  cursor: pointer;
 }
