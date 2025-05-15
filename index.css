@@ -56,10 +56,6 @@ h3 {
   align-items: left;
 }
 
-/* .fa-solid {
-  color: #ffb731;
-} */
-
 .stars {
   padding-bottom: 1rem;
   color: white;
@@ -78,10 +74,14 @@ h3 {
   color: #ffe58a;
 }
 
-.stars i.clicked {
+.stars i.clicked,
+.star-icon {
   color: #ffb731;
 }
 
+.star-icon {
+  padding-left: 0.2rem;
+}
 /*Navigationbar*/
 header {
   position: relative;
@@ -300,10 +300,18 @@ nav img {
 }
 
 /*Review page*/
+/* .reviewpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
 .reviewpage {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 #title,
@@ -325,6 +333,17 @@ nav img {
 }
 
 /*Account*/
+
+.user-review {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.reviews-section {
+  display: block !important;
+  padding-top: 2rem;
+}
+
 #review-display {
   padding: 1rem;
 }
@@ -336,8 +355,14 @@ nav img {
   justify-content: flex-start;
 }
 
+.reviews-section figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .review-box,
-.profile {
+.profile,
+.reviews-section figure {
   background-color: #a70000;
   padding: 15px;
   margin-bottom: 15px;
@@ -517,6 +542,7 @@ img,
   font-size: 1.1rem;
   font-weight: 400;
 }
+
 /*Editorial Section*/
 .editorial-section {
   display: flex;
@@ -597,4 +623,35 @@ img,
 
 .quote h3 {
   font-size: 2rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #a70000;
+  padding: 2rem;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a,
+.footer-copyright {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover {
+  color: black;
+  cursor: pointer;
 }
