@@ -5,19 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editorial</title>
     <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://kit.fontawesome.com/87dc3e8f6e.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="homepage.js" defer></script>
+    <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
   </head>
 
   <body>
+    <header>
+      <div class="mobile-header">
+        <button id="menu" onclick="openHamburgerNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
+
+      <a href="account.html" class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      <nav>
+        <ul>
+          <li>
+            <button onclick="location.href='movielist.html'" class="nav-button">
+              MOVIE LIST
+            </button>
+          </li>
+          <li>
+            <button onclick="location.href='review.html'" class="nav-button">
+              NEW REVIEW
+            </button>
+          </li>
+          <li>
+            <button onclick="location.href='watchlist.html'" class="nav-button">
+              WATCHLIST
+            </button>
+          </li>
+          <li>
+            <a href="account.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="menubar" class="hamburgermenu">
+        <a href="movielist.html">MOVIE LIST</a>
+        <a href="review.html">NEW REVIEW</a>
+        <a href="watchlist.html">WATCHLIST</a>
+      </div>
+    </header>
+
     <section class="title">
       <img src="images/onset2.jpeg" alt="Movie Set - Red Color" />
       <div class="title-text">
