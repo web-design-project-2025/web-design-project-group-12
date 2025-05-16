@@ -47,11 +47,13 @@ THE FINAL CUT is made for both reading and writing reviews, so do both! Check ou
   The movies added to your watchlist will appear on this page.
 - editorial.html:
   The page with editorial content.
+- movies.html:
+  Page with information, and reviews about a specific movie.
 
 ### CSS
 
 - index.css:
-  Main stylesheet for the website.
+Main stylesheet for the website.
 
 ### JavaScript
 
@@ -69,7 +71,7 @@ THE FINAL CUT is made for both reading and writing reviews, so do both! Check ou
 ### JSON
 
 - movies.json:
-  All our movies loaded through movies.js to movieslist.html and index.html.
+  All our movies loaded through movies.js to movieslist.html, movies.html and index.html.
 
 ## CREATORS 🧠
 

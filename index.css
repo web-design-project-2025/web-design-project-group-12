@@ -8,6 +8,7 @@
 
 body {
   background-color: #000000;
+  min-height: 100vh;
 }
 
 #logo {
@@ -39,7 +40,6 @@ h2,
   font-weight: 600;
   margin: 0 auto;
   text-align: center;
-  padding-top: 2rem;
 }
 
 h3 {
@@ -66,6 +66,20 @@ a {
   padding-bottom: 0.5rem;
 }
 
+.h2-movielist {
+  padding-top: 2rem;
+}
+
+.reviewpage h2,
+#account-container h2,
+#watchlist-section h2 {
+  padding-bottom: 2rem;
+}
+
+.specific-h2 {
+  text-align: left;
+}
+
 /*Buttons*/
 #button {
   text-transform: uppercase;
@@ -90,13 +104,6 @@ a {
   background-color: transparent;
 }
 
-/* .nav-button:hover,
-.fa-trash-can:hover,
-.footer-links a:hover,
-i:hover {
-  color: black;
-  cursor: pointer;
-} */
 .nav-button:hover,
 .fa-trash-can:hover,
 .footer-links a:hover,
@@ -583,6 +590,10 @@ img,
 footer {
   background-color: #a70000;
   padding: 2rem;
+}
+
+.footer-placement {
+  min-height: calc(100vh - 130px);
 }
 
 .footer {

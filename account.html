@@ -7,76 +7,90 @@
     <link rel="stylesheet" href="index.css" />
     <script src="account.js" defer></script>
     <script src="homepage.js" defer></script>
-    <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ikd0whu.css" />
   </head>
-  
+
   <body>
-    <header>
-      <div class="mobile-header">
-        <button id="menu" onclick="openHamburgerNav()">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+    <div class="footer-placement">
+      <header>
+        <div class="mobile-header">
+          <button id="menu" onclick="openHamburgerNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
-      <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
+        <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
 
-      <a href="account.html" class="profile-icon">
-        <i class="fa-solid fa-user"></i>
-      </a>
+        <a href="account.html" class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </a>
 
-      <nav>
-        <ul>
-          <li>
-            <button onclick="location.href='movielist.html'" class="nav-button">
-              MOVIE LIST
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='review.html'" class="nav-button">
-              NEW REVIEW
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='watchlist.html'" class="nav-button">
-              WATCHLIST
-            </button>
-          </li>
-          <li>
-            <a href="account.html"><i class="fa-solid fa-user"></i></a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li>
+              <button
+                onclick="location.href='movielist.html'"
+                class="nav-button"
+              >
+                MOVIE LIST
+              </button>
+            </li>
+            <li>
+              <button onclick="location.href='review.html'" class="nav-button">
+                NEW REVIEW
+              </button>
+            </li>
+            <li>
+              <button
+                onclick="location.href='watchlist.html'"
+                class="nav-button"
+              >
+                WATCHLIST
+              </button>
+            </li>
+            <li>
+              <a href="account.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
 
-      <div id="menubar" class="hamburgermenu">
-        <a href="movielist.html">MOVIE LIST</a>
-        <a href="review.html">NEW REVIEW</a>
-        <a href="watchlist.html">WATCHLIST</a>
-      </div>
-    </header>
+        <div id="menubar" class="hamburgermenu">
+          <a href="movielist.html">MOVIE LIST</a>
+          <a href="review.html">NEW REVIEW</a>
+          <a href="watchlist.html">WATCHLIST</a>
+        </div>
+      </header>
 
-    <div id="account-container">
-    <h2>Account</h2>
-    <div class="profile" id="profile">
-      <img
-        src="images/lillyprofile.jpg"
-        alt="Lilly Johansson profilepicture"
-        class="profile-img"
-      />
-      <div class="profile-info">
-        <h3 id="profilename">Lilly Johansson</h3>
-        <p id="profile-genre">FAVORITE GENRE: Romance and fantasy</p>
+      <div id="account-container">
+        <h2>Account</h2>
+        <div class="profile" id="profile">
+          <img
+            src="images/lillyprofile.jpg"
+            alt="Lilly Johansson profilepicture"
+            class="profile-img"
+          />
+          <div class="profile-info">
+            <h3 id="profilename">Lilly Johansson</h3>
+            <p id="profile-genre">FAVORITE GENRE: Romance and fantasy</p>
+          </div>
+        </div>
+
+        <h3>Your Reviews</h3>
+        <a href="review.html" id="button"> Add a new review </a>
+        <div id="review-display"></div>
+        <div id="snackbar">Your review has been posted</div>
       </div>
     </div>
-
-    <h3>Your Reviews</h3>
-    <a href="review.html" id="button"> Add a new review </a>
-    <div id="review-display"></div>
-    <div id="snackbar">Your review has been posted</div>
-    </div>
-
     <footer>
       <div class="footer">
         <div class="footer-links">

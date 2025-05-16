@@ -9,66 +9,80 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/ikd0whu.css" />
-    <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
+
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <header>
-      <div class="mobile-header">
-        <button id="menu" onclick="openHamburgerNav()">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+    <div class="footer-placement">
+      <header>
+        <div class="mobile-header">
+          <button id="menu" onclick="openHamburgerNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
+
+        <a href="account.html" class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <nav>
+          <ul>
+            <li>
+              <button
+                onclick="location.href='movielist.html'"
+                class="nav-button"
+              >
+                MOVIE LIST
+              </button>
+            </li>
+            <li>
+              <button onclick="location.href='review.html'" class="nav-button">
+                NEW REVIEW
+              </button>
+            </li>
+            <li>
+              <button
+                onclick="location.href='watchlist.html'"
+                class="nav-button"
+              >
+                WATCHLIST
+              </button>
+            </li>
+            <li>
+              <a href="account.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="menubar" class="hamburgermenu">
+          <a href="movielist.html">MOVIE LIST</a>
+          <a href="review.html">NEW REVIEW</a>
+          <a href="watchlist.html">WATCHLIST</a>
+        </div>
+      </header>
+
+      <h2 class="h2-movielist">Movie list</h2>
+      <div id="filter-container">
+        <h3>Filter by</h3>
+        <button id="button" onclick="filterMovies('All')">All</button>
+        <button id="button" onclick="filterMovies('Romance')">Romance</button>
+        <button id="button" onclick="filterMovies('Action')">Action</button>
+        <button id="button" onclick="filterMovies('Horror')">Horror</button>
       </div>
 
-      <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
-
-      <a href="account.html" class="profile-icon">
-        <i class="fa-solid fa-user"></i>
-      </a>
-
-      <nav>
-        <ul>
-          <li>
-            <button onclick="location.href='movielist.html'" class="nav-button">
-              MOVIE LIST
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='review.html'" class="nav-button">
-              NEW REVIEW
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='watchlist.html'" class="nav-button">
-              WATCHLIST
-            </button>
-          </li>
-          <li>
-            <a href="account.html"><i class="fa-solid fa-user"></i></a>
-          </li>
-        </ul>
-      </nav>
-
-      <div id="menubar" class="hamburgermenu">
-        <a href="movielist.html">MOVIE LIST</a>
-        <a href="review.html">NEW REVIEW</a>
-        <a href="watchlist.html">WATCHLIST</a>
-      </div>
-    </header>
-
-    <h2>Movie list</h2>
-    <div id="filter-container">
-      <h3>Filter by</h3>
-      <button id="button" onclick="filterMovies('All')">All</button>
-      <button id="button" onclick="filterMovies('Romance')">Romance</button>
-      <button id="button" onclick="filterMovies('Action')">Action</button>
-      <button id="button" onclick="filterMovies('Horror')">Horror</button>
+      <ul id="movie-thumbnails"></ul>
     </div>
-
-    <ul id="movie-thumbnails"></ul>
-
     <footer>
       <div class="footer">
         <div class="footer-links">
