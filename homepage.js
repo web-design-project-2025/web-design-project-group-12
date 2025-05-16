@@ -6,9 +6,3 @@ function openHamburgerNav() {
     menu.style.display = "block";
   }
 }
-
-// window.addEventListener("resize", () => {
-//   if (window.innerWidth > 680) {
-//     closeHamburgerNav();
-//   }
-// });

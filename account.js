@@ -37,9 +37,6 @@ for (let i = 0; i < trashIcons.length; i++) {
   });
 }
 
-//renderReviews();
-
-// renderReviews();
 /*Snackbar - message for a posted review*/
 document.addEventListener("DOMContentLoaded", function () {
   if (localStorage.getItem("reviewAdded") === "true") {
