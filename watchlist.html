@@ -7,56 +7,67 @@
     <link rel="stylesheet" href="index.css" />
     <script src="movies.js" defer></script>
     <script src="homepage.js" defer></script>
-    <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
+    <script
+      src="https://kit.fontawesome.com/87dc3e8f6e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
+
   <body>
-    <header>
-      <div class="mobile-header">
-        <button id="menu" onclick="openHamburgerNav()">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+    <div class="footer-placement">
+      <header>
+        <div class="mobile-header">
+          <button id="menu" onclick="openHamburgerNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
+
+        <a href="account.html" class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <nav>
+          <ul>
+            <li>
+              <button
+                onclick="location.href='movielist.html'"
+                class="nav-button"
+              >
+                MOVIE LIST
+              </button>
+            </li>
+            <li>
+              <button onclick="location.href='review.html'" class="nav-button">
+                NEW REVIEW
+              </button>
+            </li>
+            <li>
+              <button
+                onclick="location.href='watchlist.html'"
+                class="nav-button"
+              >
+                WATCHLIST
+              </button>
+            </li>
+            <li>
+              <a href="account.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="menubar" class="hamburgermenu">
+          <a href="movielist.html">MOVIE LIST</a>
+          <a href="review.html">NEW REVIEW</a>
+          <a href="watchlist.html">WATCHLIST</a>
+        </div>
+      </header>
+
+      <div id="watchlist-section">
+        <h2>My watchlist</h2>
+        <div id="watchlist-container" class="movie-grid"></div>
       </div>
-
-      <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
-
-      <a href="account.html" class="profile-icon">
-        <i class="fa-solid fa-user"></i>
-      </a>
-
-      <nav>
-        <ul>
-          <li>
-            <button onclick="location.href='movielist.html'" class="nav-button">
-              MOVIE LIST
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='review.html'" class="nav-button">
-              NEW REVIEW
-            </button>
-          </li>
-          <li>
-            <button onclick="location.href='watchlist.html'" class="nav-button">
-              WATCHLIST
-            </button>
-          </li>
-          <li>
-            <a href="account.html"><i class="fa-solid fa-user"></i></a>
-          </li>
-        </ul>
-      </nav>
-
-      <div id="menubar" class="hamburgermenu">
-        <a href="movielist.html">MOVIE LIST</a>
-        <a href="review.html">NEW REVIEW</a>
-        <a href="watchlist.html">WATCHLIST</a>
-      </div>
-    </header>
-
-    <div id="watchlist-section">
-    <h2>My watchlist</h2>
-    <div id="watchlist-container" class="movie-grid"></div>
     </div>
     <footer>
       <div class="footer">
