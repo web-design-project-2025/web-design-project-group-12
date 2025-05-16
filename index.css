@@ -795,12 +795,6 @@ footer {
 
 /*Responsive - hamburger menu*/
 @media screen and (max-width: 680px) {
-  #logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   nav {
     display: none;
   }
