@@ -41,6 +41,8 @@ THE FINAL CUT is made for both reading and writing reviews, so do both! Check ou
   Account page of the website, your posted reviews will be displayed here.
 - movieslist.html:
   All the movies on the website are displayed here, with a filtering system.
+- movies.html:
+  Detail page for every movie loaded with different ID:s.
 - review.html:
   Page for writing a new review.
 - watchlist.html:
@@ -53,9 +55,9 @@ THE FINAL CUT is made for both reading and writing reviews, so do both! Check ou
 ### CSS
 
 - index.css:
-Main stylesheet for the website.
+  Main stylesheet for the website.
 
-### JavaScript
+### JAVASCRIPT
 
 - account.js:
   Functions connected to account.html.
@@ -72,6 +74,11 @@ Main stylesheet for the website.
 
 - movies.json:
   All our movies loaded through movies.js to movieslist.html, movies.html and index.html.
+
+### IMAGES
+
+- images and detail_images:
+  All the images are collected in two folders.
 
 ## CREATORS 🧠
 
