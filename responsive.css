@@ -1,0 +1,106 @@
+/*Responsiveness for Movie List Page*/
+@media screen and (max-width: 1000px){
+
+  #movie-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem;
+  object-fit: cover;
+  }
+}
+@media screen and (max-width: 750px){
+  #movie-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem;
+  object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #movie-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem;
+  object-fit: cover;  
+  }
+}
+
+
+/* Responsiveness for Movies Detail Page */
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  #movie-container {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    max-width: 95%;
+    padding: 0 2rem;
+    margin-top: 80px;
+  }
+
+  #movie-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 13;
+  }
+
+  #reviews-movie-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #movie-container {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 0 1rem;
+  }
+
+  #movie-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  #reviews-movie-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Add to the bottom of movie page in index.css*/
+#reviews-movie-page{
+  padding-left: 2rem;
+}
+
+/* Responsiveness Footer */
+
+@media screen and (max-width: 640px){
+
+.footer-links {
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;    
+  }
+
+  .footer-copyright{
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+.footer-links{
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   margin: auto;
+  }
+
+}
