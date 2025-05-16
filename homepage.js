@@ -7,8 +7,8 @@ function openHamburgerNav() {
   }
 }
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 680) {
-    closeHamburgerNav();
-  }
-});
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth > 680) {
+//     closeHamburgerNav();
+//   }
+// });
