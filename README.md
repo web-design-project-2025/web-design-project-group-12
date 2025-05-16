@@ -67,8 +67,6 @@ THE FINAL CUT is made for both reading and writing reviews, so do both! Check ou
   Used to load movies to movieslist.html and index.html from movies.json.
 - review.js:
   Functions connected to review.html.
-- watchlist.js:
-  Functions connected to watchlist.html.
 
 ### JSON
 
