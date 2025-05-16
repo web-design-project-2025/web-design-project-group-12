@@ -23,6 +23,7 @@ p,
 a,
 .user-review,
 .text-column .lead,
+.footer-copyright,
 #button {
   color: white;
 }
@@ -89,10 +90,18 @@ a {
   background-color: transparent;
 }
 
-.nav-button:hover,
+/* .nav-button:hover,
 .fa-trash-can:hover,
 .footer-links a:hover,
 i:hover {
+  color: black;
+  cursor: pointer;
+} */
+.nav-button:hover,
+.fa-trash-can:hover,
+.footer-links a:hover,
+nav i:hover,
+.profile-icon i:hover {
   color: black;
   cursor: pointer;
 }
