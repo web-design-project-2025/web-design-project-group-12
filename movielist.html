@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie List</title>
     <script src="movies.js" defer></script>
+    <script src="homepage.js" defer></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/ikd0whu.css" />
-    <script
-      src="https://kit.fontawesome.com/87dc3e8f6e.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/87dc3e8f6e.js" crossorigin="anonymous" ></script>
   </head>
+
   <body>
     <header>
-      <p id="logo">THE FINAL CUT</p>
+      <div class="mobile-header">
+        <button id="menu" onclick="openHamburgerNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <a href="index.html"><p id="logo">THE FINAL CUT</p></a>
+
+      <a href="account.html" class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
       <nav>
-        <ul class="wrapper-container">
+        <ul>
           <li>
             <button onclick="location.href='movielist.html'" class="nav-button">
               MOVIE LIST
@@ -38,13 +45,19 @@
               WATCHLIST
             </button>
           </li>
-          <li><input type="text" placeholder="Search.." /></li>
           <li>
-            <a href="account.html"><img src="images/user.png" alt="user" /></a>
+            <a href="account.html"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
       </nav>
+
+      <div id="menubar" class="hamburgermenu">
+        <a href="movielist.html">MOVIE LIST</a>
+        <a href="review.html">NEW REVIEW</a>
+        <a href="watchlist.html">WATCHLIST</a>
+      </div>
     </header>
+
     <h2>Movie list</h2>
     <div id="filter-container">
       <h3>Filter by</h3>
@@ -55,5 +68,17 @@
     </div>
 
     <ul id="movie-thumbnails"></ul>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-links">
+          <a href="editorial.html">EDITORIAL</a>
+          <a href="#">PRIVACY</a>
+          <a href="#">TERMS</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <div class="footer-copyright">© The Final Cut 2025</div>
+      </div>
+    </footer>
   </body>
 </html>
