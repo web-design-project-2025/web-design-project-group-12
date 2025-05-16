@@ -79,3 +79,28 @@
 #reviews-movie-page{
   padding-left: 2rem;
 }
+
+/* Responsiveness Footer */
+
+@media screen and (max-width: 640px){
+
+.footer-links {
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;    
+  }
+
+  .footer-copyright{
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+.footer-links{
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   margin: auto;
+  }
+
+}
