@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//Javascript inspiration helping with displaying movies on Movie List https://chatgpt.com/share/68228176-34f0-8003-83c3-7248dcc15dfb
+//Javascript inspiration helping with displaying movies on Movie List retrieved 10/05/2025: https://chatgpt.com/share/68228176-34f0-8003-83c3-7248dcc15dfb
 function displayMovies(movies) {
   const container = document.getElementById("movie-thumbnails");
   container.innerHTML = "";
@@ -262,10 +262,6 @@ window.onload = function () {
 
       const img = document.createElement("img");
       img.src = movie.image;
-      img.alt = movie.title;
-
-      const title = document.createElement("p");
-      title.innerText = movie.title;
 
       const trashIcon = document.createElement("i");
       trashIcon.classList.add("fa-solid", "fa-trash-can");
@@ -279,7 +275,6 @@ window.onload = function () {
       });
 
       card.appendChild(img);
-      card.appendChild(title);
       card.appendChild(trashIcon);
       watchlistContainer.appendChild(card);
     });
