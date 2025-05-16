@@ -37,7 +37,7 @@ for (let i = 0; i < trashIcons.length; i++) {
   });
 }
 
-renderReviews();
+//renderReviews();
 
 // renderReviews();
 /*Snackbar - message for a posted review*/
